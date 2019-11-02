@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <ul class="menu">Меню
@@ -11,25 +12,36 @@
     <li><a href="contacts.html">Контакты</a></li>
 </ul>
 <hr/>
-<h1>Контакты</h1>
-<h2>Есть вопросы или предложения? Напишите нам!</h2>
-<form action="#">
-    Ваше имя <input type="text" placeholder="Ваше имя"><br>
-    Е-mail <input type="text" placeholder="Е-mail"><br>
-    Тема сообщения <input type="text" placeholder="Тема сообщения"><br>
-    Текст сообщения <input type="text" placeholder="Текст сообщения"><br><br>
+<h1 class="name">Контакты</h1>
+<h3>Есть вопросы или предложения?<br> Напишите нам!</h3>
+<form class="form" action="#">
+    <label>
+        Ваше имя
+        <input type="text" placeholder="Ваше имя">
+    </label><br>
+    <label>
+        Е-mail
+        <input type="email" placeholder="Е-mail">
+    </label><br>
+    <label>
+        Тема сообщения
+        <input type="text" placeholder="Тема сообщения">
+    </label><br>
+    Текст сообщения <br><label>
+    <textarea rows="8" cols="45" placeholder="Текст сообщения"></textarea>
+</label><br>
     <input type="submit" value="Отправить">
     <input type="reset" value="Очистить">
 </form>
 
 <h2>Контактная информация</h2>
-Телефон +7 000 000 00 00<br>
+<p>Телефон +7 000 000 00 00<br>
 Е-mail: mail@site.ru<br>
 Время работы:<br>
 Пн-Сб 09:00-20:00;<br>
 Вс 10:00-20.00<br>
-Красная пл., 3, Москва, Россия, 109012<br>
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EyHtJM8IbCUH5uC-fZIBqlk5ROLgMSBg" width="320" height="240"></iframe>
+    Красная пл., 3, Москва, Россия, 109012<br></p>
+<iframe class='map' src="https://www.google.com/maps/d/u/0/embed?mid=1EyHtJM8IbCUH5uC-fZIBqlk5ROLgMSBg" width="320" height="240"></iframe>
 <hr/>
 <p>Все права защищены &copy; 2019</p>
 </body>
