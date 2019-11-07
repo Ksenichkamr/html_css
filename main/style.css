@@ -2,7 +2,7 @@ body{
     background-color: #f8f8f8;
 }
 .menu {
-    color: darkblue;
+    color: darkred;
     font-size: 120%;
     text-align: center;
     font-weight: 600;
@@ -11,14 +11,17 @@ body{
     padding-inline-start: 0;
 }
 .menu li a{
-    color: black;
+    color: lightpink;
     text-decoration: none;
 }
 .menu li a:hover {
     color: darkred;
 }
 .menu li a:active{
-    color: darkgreen;
+    color: #ffa9fa;
+}
+.logo {
+    position: relative
 }
 .heading {
     color: black;
@@ -44,6 +47,15 @@ textarea{
     font-family: "Times New Roman", serif, Verdana;
     font-weight: 500;
 }
+textarea:focus, input:focus {
+    color: darkred;
+    background-color: mistyrose;
+    text-transform: capitalize;
+}
+input, textarea{
+    color: darkred;
+    text-transform: capitalize;
+}
 .map{
     display: block;
     margin-left: auto;
@@ -61,6 +73,13 @@ textarea{
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+img[alt="logo"] {
+    outline: 1px solid #f8f8f8;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 img[alt="dzhuletta"],
 img[alt="Juliet"] {
@@ -87,7 +106,6 @@ img[alt="sun"] {
     margin-right: auto;
 }
 .list{
-    list-style-type: none; /*убирает точки*/
     font-family: Calibri, sans-serif;
     font-size: 18px;
 }
@@ -100,7 +118,7 @@ img[alt="sun"] {
 }
 .link{
     text-decoration: none;
-    color: darkblue;
+    color: darkred;
     text-align: center;
     list-style-type: none;
     font-size: 120%;
@@ -108,7 +126,7 @@ img[alt="sun"] {
     font-family: "Times New Roman", serif, Verdana;
 }
 .link li a{
-    color: black;
+    color: lightpink;
     text-decoration: none;
 }
 h1,
@@ -117,4 +135,32 @@ h3,
 p{
     text-align: center;
     color: black;
+}
+
+.text:first-letter,
+.description:first-letter,
+.full_description:first-letter {
+    font-size: 25px;
+    color: darkred;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.table {
+    border: 1px solid darkred;
+    width: 600px;
+    height: 300px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table td {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+.title {
+    height: 35px;
 }
