@@ -1,45 +1,90 @@
-body{
+body {
     background-color: #f8f8f8;
 }
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 150px;
+    background-image: url("catalog/img/background.jpg") ;
+    background-size: cover;
+}
+
+.logo {
+    width: 170px;
+    height: 110px;
+    outline: 1px solid darkred;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+}
+.footer_container{
+    height: 60px;
+    background-color: gray;
+
+}
+.footer{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
 .menu {
-    color: darkred;
     font-size: 120%;
     text-align: center;
     font-weight: 600;
     font-family: "Times New Roman", serif, Verdana;
     list-style-type: none;
     padding-inline-start: 0;
+    float: right;
+    margin-right: 10px;
 }
-.menu li a{
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
     color: lightpink;
     text-decoration: none;
 }
+
 .menu li a:hover {
     color: darkred;
 }
-.menu li a:active{
-    color: #ffa9fa;
+
+.menu li a:active {
+    color: fuchsia;
 }
-.logo {
-    position: relative
-}
+
 .heading {
     color: black;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
 }
-.name{
+
+.name {
     color: darkred;
 }
-.form{
-    text-align: left;
-    padding-left:600px;
+
+.form {
+    text-align: center;
     font-size: medium;
     font-family: "Times New Roman", serif, Verdana;
-    }
+}
+
+.product_list{
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+}
+
 input,
-textarea{
+textarea {
     color: darkblue;
     font-size: medium;
     width: auto;
@@ -47,48 +92,58 @@ textarea{
     font-family: "Times New Roman", serif, Verdana;
     font-weight: 500;
 }
+
 textarea:focus, input:focus {
     color: darkred;
     background-color: mistyrose;
     text-transform: capitalize;
 }
-input, textarea{
+
+input, textarea {
     color: darkred;
     text-transform: capitalize;
 }
-.map{
+
+.map {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.description{
+
+.description {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
-.full_description{
+
+.full_description {
     color: #484343;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
 }
-img[alt="logo"] {
-    outline: 1px solid #f8f8f8;
+
+
+img[alt="dzhuletta"],
+img[alt="Juliet"] {
+    outline: 3px solid peachpuff;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-img[alt="dzhuletta"],
-img[alt="Juliet"] {
-     outline: 3px solid peachpuff;
-     text-align: center;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
- }
+
+img[alt="dzhuletta"]:hover,
+img[alt="Juliet"]:hover,
+img[alt="black"]:hover,
+img[alt="rose-black-prince"]:hover,
+img[alt="sunlight"]:hover,
+img[alt="sun"]:hover {
+    outline: none;
+}
+
 img[alt="black"],
 img[alt="rose-black-prince"] {
     outline: 3px solid darkred;
@@ -97,6 +152,7 @@ img[alt="rose-black-prince"] {
     margin-left: auto;
     margin-right: auto;
 }
+
 img[alt="sunlight"],
 img[alt="sun"] {
     outline: 3px solid wheat;
@@ -105,18 +161,21 @@ img[alt="sun"] {
     margin-left: auto;
     margin-right: auto;
 }
-.list{
+
+.list {
     font-family: Calibri, sans-serif;
     font-size: 18px;
 }
+
 .list li {
     list-style: none;
     background: url("catalog/img/mark.jpg") no-repeat 0 5px;
     background-size: 16px;
-    padding-left:20px;
-    line-height:1.3em;
+    padding-left: 20px;
+    line-height: 1.3em;
 }
-.link{
+
+.link {
     text-decoration: none;
     color: darkred;
     text-align: center;
@@ -125,14 +184,16 @@ img[alt="sun"] {
     font-weight: 600;
     font-family: "Times New Roman", serif, Verdana;
 }
-.link li a{
+
+.link li a {
     color: lightpink;
     text-decoration: none;
 }
+
 h1,
 h2,
 h3,
-p{
+p {
     text-align: center;
     color: black;
 }
@@ -154,6 +215,7 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
+
 .table td {
     border: 1px solid black;
     padding-left: 5px;
@@ -161,6 +223,8 @@ p{
     vertical-align: middle;
     text-align: center;
 }
+
 .title {
     height: 35px;
 }
+
